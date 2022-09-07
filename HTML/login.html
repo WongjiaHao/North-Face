@@ -1,0 +1,132 @@
+<!--
+ * @Author: Wenjiahao
+ * @Date: 2022-08-26 21:25:34
+ * @LastEditors: wenjiahao
+ * @LastEditTime: 2022-09-03 14:07:36
+ * @FilePath: \North-face\HTML\login.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/login/login.css">
+    <link rel="stylesheet" href="../../North-face/font/iconfont.css">
+    <link rel="stylesheet" href="../../North-face/CSS/header/header.css">
+    <link rel="stylesheet" href="../../North-face/CSS/footer/footer.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <!-- 通知栏  -->
+        <div class="black-box">
+            <a href="#">
+                <span class="iconfont icon-wujiaoxing"></span>
+                官方商城订单均正常发货中（含上海），停止揽收地区除外，详询客服。</a>
+        </div>
+        <div class="w">
+            
+            <!-- banner图 -->
+            <div class="banner">
+                <img src="../images/loginbg.jpg" alt="">
+            </div>
+            <div class="content">
+                <!-- 表单 -->
+                <div class="enter">
+                    <h2>登录</h2>
+                    <form action="#" method="post">
+                        <p class="tips"></p>
+                        <input class="userTel" type="text" name="userTel" placeholder="手机号">
+                        <p class="tips"></p>
+                        <input class="userPassword" type="password" name="userPassword" placeholder="密码">
+                        <button type="button" class="sub">Login</button>
+                    </form>
+                    <div class="number">账号登录</div>
+                </div>
+                <!-- 文章 -->
+                <div class="why">
+                    <h2>为什么加入探索通？</h2>
+                    <p>立即注册The North Face会员项目“探索通”即可获得价值50元入会礼券，可在指定线下店铺与官方商城购买指定商品满500元使用。</p>
+                    <h3>另有更多会员专享权益，助力您探索永不停止。</h3>
+                    <div class="vip"><a href="#"><span class="iconfont icon-jifen"></span>购物享积分</a></div>
+                    <div class="vip"><a href="#">
+                            <span class="iconfont icon-liwubeifen"></span>最高价值388元生日礼券
+                        </a></div>
+                    <div class="vip"><a href="#">
+                            <span class="iconfont icon-JACKET"></span>会员专享预售与限量抽签活动
+                        </a></div>
+                    <div class="vip"><a href="#">
+                            <span class="iconfont icon-shinshopxinpin
+                    "></span>新品与活动通知
+                        </a></div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        $("header").load("../HTML/header.html");
+        $("footer").load("../HTML/footer.html");
+    </script>
+    <script src="../JS/utils.js"></script>
+    <script>
+        var reurl = location.search.split('url=')[1]
+        var reg1 = /^(13[0-9]|14[01456879]|15[0-35-9]|16[2567]|17[0-8]|18[0-9]|19[0-35-9])\d{8}$/
+        var reg2 = /^[a-zA-Z]\w{5,17}$/; /* 以字母开头，长度在6~18之间，只能包含字母、数字和下划线 */
+        /* 前端校验手机号 */
+        $('.userTel').blur(function () {
+            var userTel = $('.userTel').val()
+            if (!reg1.test(userTel)) {
+                $($('.tips')[0]).html('Please use correct TelNumber!').css('color', 'red');
+            } else {
+                $($('.tips')[0]).html('correct').css('color', 'green');
+            }
+        })
+        /* 前端校验密码格式 */
+        $('.userPassword')[0].onblur = function () {
+            var userPassword = $('.userPassword').val()
+            if (!reg2.test(userPassword)) {
+                $($('.tips')[1]).html('Please use correct password!').css('color', 'red');
+            } else {
+                $($('.tips')[1]).html('correct').css('color', 'green');
+            }
+        }
+        /* 发送请求 */
+        $('.sub').click(function(){
+            //获取表单内容
+            var userTel = $('.userTel').val()
+            var userPassword = $('.userPassword').val()
+            if (reg1.test(userTel) && reg2.test(userPassword)){
+                $.ajax({
+                    url:'../PHP/login.php',
+                    type:"POST",
+                    data:{userTel,userPassword},
+                    success(res){
+                        alert('欢迎'+userTel+'来到北面商城');
+                        setCookie('userName',userTel,360000);
+                         location=reurl||'http://localhost/North-face/indexxx.html';
+                        
+                    },
+                    error(err){
+                        console.log(err.status);
+                        alert("Failed to login,sry!")
+
+                    }
+                })
+            }else{
+
+            }
+        })
+    </script>
+</body>
+
+</html>

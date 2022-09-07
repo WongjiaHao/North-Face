@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+* a {
+  color: #333;
+}
+
+body,
+html {
+  width: 100%;
+}
+
+html {
+  min-width: 1200px;
+}
+
+.w {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.w .nav {
+  height: 50px;
+  color: #afafaf;
+  line-height: 50px;
+  font-size: 12px;
+}
+.w .screen {
+  height: 47px;
+}
+.w .screen ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.w .screen ul li {
+  width: 12.5%;
+  text-align: center;
+  line-height: 47px;
+  border: 1px solid #afafaf;
+  position: relative;
+}
+.w .screen ul li .selectBy {
+  display: none;
+  background-color: #fff;
+  color: #aaa;
+  font-size: 10%;
+  width: 100%;
+  position: absolute;
+  top: 48px;
+  text-align: center;
+}
+.w .screen ul li .selectBy div {
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ddd;
+}
+.w .screen ul li:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border: 2px solid #333;
+  display: block;
+  border-left: 0;
+  border-top: 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 16px;
+  right: 12px;
+}
+.w .screen ul li:nth-child(1) {
+  border-left: 0px;
+}
+.w .screen ul li:nth-child(8) {
+  border-right: 0px;
+}
+.w .list ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+.w .list ul li:hover {
+  top: -2px;
+  box-shadow: 0 0 5px 0px rgba(92, 92, 92, 0.5);
+}
+.w .list ul li {
+  transition: all 0.5s;
+  width: 300px;
+  height: 306px;
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.w .list ul li .good-item {
+  text-align: center;
+  font-size: 16px;
+}
+.w .list ul li .good-item img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.w .list ul li .good-item p {
+  padding: 0 20px;
+}
+.w .list ul li .good-item span {
+  margin-top: 10px;
+  width: 100%;
+  text-indent: 2em;
+  display: block;
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+  color: crimson;
+}
+.w .pagination {
+  border: 1px solid blue;
+  width: 600px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 5px auto;
+}
+.w .pagination .first,
+.w .pagination .last,
+.w .pagination .prev,
+.w .pagination .next {
+  width: 100px;
+  line-height: 30px;
+  text-align: center;
+}

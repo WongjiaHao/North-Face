@@ -1,0 +1,112 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+
+body,
+html {
+  width: 100%;
+}
+
+html {
+  min-width: 1200px;
+}
+
+.w {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.black-box {
+  height: 32px;
+  background-color: #000;
+  text-align: center;
+}
+.black-box a {
+  color: aliceblue;
+  line-height: 32px;
+}
+
+.content {
+  height: 607px;
+  width: 1020px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.content h2 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+.content .enter {
+  width: 470px;
+  height: 507px;
+  float: left;
+  bottom-width: 160px;
+  bottom-height: 48px;
+  bottom-background-color: #000;
+  bottom-color: #fff;
+  bottom-font-size: 16px;
+  bottom-text-align: center;
+  bottom-line-height: 48px;
+  bottom-transform: translate(310px, 80px);
+  bottom-cursor: pointer;
+}
+.content .enter .number {
+  transform: translate(405px, 120px);
+}
+.content .enter input {
+  height: 48px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 35px;
+}
+.content .enter .sub {
+  display: block;
+  outline: none;
+  border: 0px;
+  width: 50%;
+  height: 48px;
+  cursor: pointer;
+}
+.content .enter .sub:hover {
+  cursor: pointer;
+}
+.content .enter p {
+  font-size: 15px;
+  line-height: 15px;
+  height: 15px;
+}
+.content .why {
+  width: 470px;
+  height: 470px;
+  float: right;
+}
+.content .why p {
+  color: #666666;
+  font-size: 16px;
+}
+.content .why h3 {
+  margin: 20px 0;
+  font-weight: 600;
+}
+.content .why .vip {
+  font-size: 18px;
+  font-weight: bold;
+  height: 60px;
+  line-height: 60px;
+}
+.content .why .vip span {
+  vertical-align: middle;
+}
+.content .why .vip a {
+  color: #000;
+}
+.content .why .vip .iconfont {
+  font-weight: 100;
+  font-size: 43px;
+  margin-right: 70px;
+}

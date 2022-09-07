@@ -1,0 +1,375 @@
+<!--
+ * @Author: Wenjiahao
+ * @Date: 2022-08-27 16:09:16
+ * @LastEditors: wenjiahao
+ * @LastEditTime: 2022-09-06 21:27:41
+ * @FilePath: \North-face\HTML\cart.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/cart/cart.css">
+</head>
+
+<body>
+    <header>
+        <div class="w">
+            <!-- logo -->
+            <div class="logo">
+                <a href="#">
+                    <img src="https://img2.thenorthface.com.cn/public/images/82/e8/63/cca60bbe9a8ba95b3486eb1e62a10bfd8c88ca0c.png?1618481574#w"
+                        alt="" width="60px">
+                </a>
+            </div>
+            <!-- 右侧 -->
+            <div class="content clear_float">
+                <h2>购物车</h2>
+                <div class="right">
+                    <span>您好!</span>
+                    <span><a href="">退出</a></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="w">
+            <!-- 购物车头部 -->
+            <div class="progressBar">
+                <ul>
+                    <li>
+                        <img src="../images/cart-in.png" alt="" ">
+                        <p class=" p1">1.加入购物车</p>
+                    </li>
+                    <li>
+                        <img src="../images/cart-out-1.png" alt="" ">
+                        <p>2.订单结算</p>
+                    </li>
+                    <li>
+                        <img src=" ../images/cart-out-2.png" alt="" ">
+                        <p>3.订单支付</p>
+                    </li>
+                </ul>
+                <div class=" nothing">
+                        <p>购物车里还没有商品 , 赶紧选购吧!</p>
+                        <a href="#">立即选购</a>
+            </div>
+        </div>
+
+        <!-- 统计表 -->
+        <table>
+            <!-- 表头 -->
+            <thead>
+                <tr class="tr-1">
+                    <th width="62px">
+                        <div class="">
+                            <input class="selectAll" type="checkbox">&nbsp;全选
+                        </div>
+                    </th>
+                    <th style="width:350px;">商品</th>
+                    <th style="width:175px;">单价</th>
+                    <th style="width:175px;">数量</th>
+                    <th style="width:175px;">小计</th>
+                    <th style="width:193px;">操作</th>
+                </tr>
+            </thead>
+
+            <!--  商品统计栏  -->
+            <tbody>
+                <tr class="tr-2">
+                    <!-- 1 -->
+                    <td width="62px">
+                        <input type="checkbox" class="input">
+                    </td>
+                    <!-- 2 -->
+                    <td width="350px">
+                        <div class="info">
+                            <img src="../images/yellow_T-shirt_girl.jpg" alt="" width="100px">
+                            <div class="info-right">
+                                <p><a target="_blank" href="#">TheNorthFace北面单肩包通用款户外运动轻质便捷上新|3KWY</a></p>
+                                <span class="black">黑色 均码</span>
+                            </div>
+
+                        </div>
+                    </td>
+                    <!-- 3 -->
+                    <td width="157px">
+                        <p class="price">￥548.00</p>
+                    </td>
+                    <!-- 4 -->
+                    <td width="157px">
+                        <div class="quantity">
+                            <a href="#" class="btn">-</a>
+                            <span class="number">1</span>
+                            <a href="#" class="btn">+</a>
+                        </div>
+                        <span class="warn">余量有限</span>
+                    </td>
+                    <!-- 5 -->
+                    <td width="157px">
+                        <span class="subtotal">￥548.00</span>
+                    </td>
+                    <!-- 6 -->
+                    <td width="193px">
+                        <a href="#" class="aa collect">收藏</a>
+                        <i style="font-style:normal;">&nbsp;|&nbsp;</i>
+                        <a href="#" class="aa collect">移除</a>
+                    </td>
+                </tr>
+            </tbody>
+
+            <!-- 总计 -->
+            <tfoot>
+                <tr class="tr-3">
+                    <td colspan="4"></td>
+                    <td colspan="2">
+                        <p class="a">商品总数：<span class="amount">2</span>&nbsp;件</p>
+                        <p class="i">商品总计：<span class="items">￥1111.00</span></p>
+                        <p class="continue">
+                            <a href="javascript:;">继续购物</a>
+                        </p>
+                        <p class="settlement" style="cursor: pointer;">
+                            <a href="javascript:;">下单结算</a>
+                        </p>
+                    </td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+
+        <div class="like">
+            <h2>猜你喜欢</h2>
+            <ul>
+                <li><a href="./details?goods_id=381">
+                    <img src="../images/like-1.jpg" alt="">
+                    <p>TheNorthFace北面短袖Polo男户外舒适透气上新|5B1O</p>
+                    <span class="cont-money">¥398.00</span>
+                    <span class="cost-line">¥398.00</span>
+                </a></li>
+            <li><a href="./details?goods_id=378">
+                    <img src="../images/like-2.jpg" alt="">
+                    <p>【山夏Tee】TheNorthFace北面短袖Polo男户外速干吸湿排汗上新|5B1P</p>
+                    <span class="cont-money">¥398.00</span>
+                    <span class="cost-line">¥398.00</span>
+                </a></li>
+            <li><a href="./details?goods_id=230">
+                    <img src="../images/like-3.jpg" alt="">
+                    <p>TheNorthFace北面短袖T恤通用款户外舒适透气春季上新|5JZT</p>
+                    <span class="cont-money">¥348.00</span>
+                    <span class="cost-line">¥348.00</span>
+                </a></li>
+            <li><a href="./details?goods_id=174">
+                    <img src="../images/like-4.jpg" alt="">
+                    <p>TheNorthFace北面短袖T恤情侣款户外舒爽透气春季上新|7WDX</p>
+                    <span class="cont-money">¥298.00</span>
+                    <span class="cost-line">¥298.00</span>
+                </a></li>
+            <li><a href="./details?goods_id=173">
+                    <img src="../images/like-5.jpg" alt="">
+                    <p>TheNorthFace北面短袖T恤情侣款户外舒爽透气春季上新|7WE1</p>
+                    <span class="cont-money">¥348.00</span>
+                    <span class="cost-line">¥348.00</span>
+                </a></li>
+            </ul>
+        </div>
+        </div>
+    </main>
+    <script src="../../North-face/JS/utils.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var userName = getCookie('userName') || null
+        if (!userName) {
+            alert('您还未登录')
+            location = './HTML/login.html?rurl=${location.href}'
+        }
+
+        var cartInfo = localStorage.getItem(userName) || '[]'
+        cartInfo = eval('(' + cartInfo + ')');
+
+        // console.log(cartInfo)
+        localStorage.setItem(userName, JSON.stringify(cartInfo))
+
+
+
+        function loaddd() {
+            //用于判断全选框
+            var temp=[];
+                cartInfo.forEach(item=>{
+                    temp.push(item.is_select)
+                })
+                $('.selectAll').prop('checked',temp.every(function(x){
+                    return x==1
+                }))
+                //用于渲染总合计：
+                $('.amount').html(total()[0]);
+            $('.items').html(`￥${total()[1].toFixed(2)}`)
+            // console.log(cartInfo)
+            if (cartInfo.length > 0) { //有商品(第一次加入购物车时都为未选中)
+                var str = ''
+                cartInfo.forEach(function (item, index) {
+                    str += `
+                            <tr class="tr-2" data-id="${item.goods_id}">
+                                <!-- 1 --><td width="62px">
+                                    <input type="checkbox" class="selectOne" ${item.is_select == 1 ? "checked" : ''} data-id="${item.goods_id}">
+                                </td>
+                                <!-- 2 --><td width="350px">
+                                    <div class="info">
+                                        <img src="${item.goods_p1}" alt="" width="100px">
+                                        <div class="info-right">
+                                            <p><a target="_blank" href="#" >${item.goods_t2}</a></p>
+                                            <span class="black">均码</span>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <!-- 3 --><td width="157px">
+                                    <p class="price">￥${parseInt(item.goods_price).toFixed(2)}</p>
+                                </td>
+                                <!-- 4 --><td width="157px">
+                                    <div class="quantity">
+                                        <a href="javascript:;" class="btn">-</a>
+                                        <span class="number">${item.goodsNum}</span>
+                                        <a href="javascript:;" class="btn">+</a>
+                                    </div>
+                                    <span class="warn">余量有限</span>
+                                </td>
+                                <!-- 5 --><td width="157px">
+                                    <span class="subtotal" >￥${parseInt(item.goodsNum*item.goods_price).toFixed(2)}</span>
+                                </td>
+                                <!-- 6 --> <td width="193px">
+                                    <a href="javascript:;" class="collect">收藏</a>
+                                    <i style="font-style:normal;">&nbsp;|&nbsp;</i>
+                                    <a href="javascript:;" class="rm">移除</a>
+                                </td>
+                            </tr>
+                            `
+                })
+                $('tbody').html(' ')
+                $('tbody').html(str)
+                $('.nothing').css('display',"none")
+            } else {
+                $('.nothing').css('display', "block")
+                $('.tr-3').css('display', 'none')
+                $('.tr-2').css('display', 'none')
+                $('.tr-1').css('display', 'none')
+            }
+        }
+        loaddd();
+
+        var cartNumsNow = $('.number')
+        $('tbody').click(function (e) {
+            var tar = $(e.target)
+            if (tar.html() == "+") {
+                // console.log(tar.prev().html())
+                console.log(tar.parent().parent().parent().attr('data-id'))
+                cartInfo.forEach(item => {
+                    if (tar.parent().parent().parent().attr('data-id') == item.goods_id) {
+                        item.goodsNum++
+                        cartNumsNow.html(item.goodsNum);
+                    }
+                })
+                localStorage.setItem(userName, JSON.stringify(cartInfo))
+                loaddd();
+            }
+
+            if (tar.html() == "-") {
+                // console.log(tar.prev().html())
+                console.log(tar.parent().parent().parent().attr('data-id'))
+                cartInfo.forEach(item => {
+                    if (tar.parent().parent().parent().attr('data-id') == item.goods_id && cartNumsNow.html()>1) {
+                        item.goodsNum--
+                        cartNumsNow.html(item.goodsNum);
+                    }
+                })
+                localStorage.setItem(userName, JSON.stringify(cartInfo))
+                loaddd();
+            }
+            if (tar.prop('class') == 'selectOne') {
+                cartInfo.forEach(item => {
+                    if (tar.parent().parent().attr('data-id') == item.goods_id) {
+                        item.is_select = (item.is_select == 1) ? 0 : 1
+                    }
+                })
+                
+                
+                localStorage.setItem(userName, JSON.stringify(cartInfo));
+                loaddd();
+            }
+            if(tar.html()=='移除'){
+                cartInfo=cartInfo.filter(item=>{
+                  return tar.parent().parent().attr('data-id') != item.goods_id
+                })
+                localStorage.setItem(userName, JSON.stringify(cartInfo))
+                loaddd();
+            }
+
+
+
+
+
+            // if(tar.html()=='+'){
+            //     console.log('11')
+            //     var cartInfo = localStorage.getItem(userName)||'[]'
+            // cartInfo = eval('('+cartInfo+')');
+            //     cartInfo.forEach(item=>{//非箭头函数指向window
+            //         if($(this).attr('data-id')==item.goods_id){
+            //         item.goodsNum++
+            //         cartNumsNow.html(item.goodsNum);
+            //     }
+            //     localStorage.setItem(userName,JSON.stringify(cartInfo)) 
+            //     })
+
+            // }
+        })
+
+
+
+        $('.selectAll').click(function () {
+            // console.log($(this).prop('checked'))
+            cartInfo.forEach(item => {
+                if ($(this).prop('checked')) {
+                    item.is_select = 1
+                } else {
+                    item.is_select = 0
+                }
+            })
+
+            localStorage.setItem(userName, JSON.stringify(cartInfo));
+            loaddd();
+        })
+
+        $('.settlement').click(function(){
+            if(confirm(`您愿意花￥${total()[1]}元来购买吗？`)){
+                cartInfo=cartInfo.filter(item=>{
+                    return item.is_select==0
+                })
+                alert('感谢您，欢迎下次光临！')
+            }
+            localStorage.setItem(userName, JSON.stringify(cartInfo))
+                loaddd();
+        })
+
+        function total(){
+            let sum = 0;//默认值
+            let num = 0;//默认值
+            cartInfo.forEach(item=>{
+                num++;
+                sum+=parseInt(item.goodsNum*item.goods_price)
+            })
+            return [num,sum]
+        }
+
+        
+    </script>
+</body>
+
+</html>

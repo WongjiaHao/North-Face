@@ -1,0 +1,157 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+body,
+html {
+    width: 100%;
+}
+
+html {
+    min-width: 1200px;
+}
+
+.w {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    // border: 1px solid red;
+}
+
+.clear_float:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+footer {
+    .black_bg {
+        height: 146px;
+        background-color: #000;
+        .w{position: relative;
+            // border: 1px solid red;
+        }
+
+        img {
+            font-size: 0;
+        }
+
+        a {
+            position: absolute;
+            display: block;
+            width: 200px;
+            height: 95px;
+            // border: 1px solid red;
+            top: 20px;
+            right: 170px;
+
+        }
+    }
+
+    .f-info {
+        padding-top: 40px;
+        height: 266px;
+
+        .w {
+
+            .f-con {
+                .f-text {
+                    .f-t-left {
+                        height: 266px;
+                        // border: 1px solid red;
+                        width: 63%;
+                        float: left;
+                        box-sizing: border-box;
+                        padding: 0 0 0 100px;
+
+                        ul {
+                            float: left;
+                            margin-right: 50px;
+
+                            a {
+                                color: #000;
+                            }
+
+                            li {
+                                font-size: 14px;
+                                line-height: 25px;
+
+                            }
+
+                            h2 {
+                                font-size: 16px;
+                                font-weight: 700;
+                                padding-bottom: 20px;
+                            }
+                        }
+                    }
+
+                    .f-t-right {
+                        height: 204px;
+                        width: 36%;
+                        float: right;
+                        padding: 0 162px 0 0;
+                        box-sizing: border-box;
+
+                        // border: 1px solid red;
+                        .QR-code {
+                            text-align: center;
+
+                            img {
+                                width: 100px;
+                            }
+
+                            .guanzhu {
+                                display: block;
+                                font-size: 12px;
+                                color: #aaa;
+                                padding-bottom: 10px;
+                            }
+
+                            .wel {
+                                margin: 0 auto;
+                                width: 205px;
+                                height: 40px;
+                                font-weight: 500;
+                                line-height: 40px;
+                                border: 1px solid #aaa;
+                                border-radius: 30px;
+                                transition: all .3s;
+                            }
+                            .wel:hover{
+                                background-color: rgb(234, 62, 97);
+                                color: aliceblue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyRight {
+        height: 42px;
+
+        .w {
+
+            padding: 40px 0 10px 0;
+            color: #999;
+            text-align: center;
+
+            p {
+                margin: 0 auto;
+
+                span {
+                    color: #000
+                }
+            }
+        }
+    }
+
+}

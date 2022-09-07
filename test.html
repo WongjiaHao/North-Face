@@ -1,0 +1,38 @@
+<!--
+ * @Author: Wenjiahao
+ * @Date: 2022-08-27 10:18:03
+ * @LastEditors: wenjiahao
+ * @LastEditTime: 2022-08-27 10:32:31
+ * @FilePath: \North-face\test.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Fun() {
+            // 在函数中添加代码，使下面的运行结果成立
+            this.attr = `hello world`
+            // this.ins
+            if (!Fun.ins) {
+                Fun.ins=this/* Fun.ins */
+            }
+            return Fun.ins/*  Fun.ins=this */
+        }
+        var obj1 = new Fun();
+        var obj2 = new Fun();
+        console.log(obj1, obj2);
+        console.log(obj1 === obj2); //true
+        console.log(obj1.attr); // 'hello world'
+    </script>
+</body>
+
+</html>

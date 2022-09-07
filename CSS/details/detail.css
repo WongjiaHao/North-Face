@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+}
+* a {
+  color: #333;
+}
+
+body,
+html {
+  width: 100%;
+}
+
+.w {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+html {
+  min-width: 1200px;
+}
+
+.INFO .w {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.INFO .w .chooseGoods {
+  display: flex;
+  position: relative;
+}
+.INFO .w .chooseGoods .left:hover .mask,
+.INFO .w .chooseGoods .left:hover ~ .right {
+  display: block;
+}
+.INFO .w .chooseGoods .left {
+  height: 500px;
+  position: relative;
+}
+.INFO .w .chooseGoods .left img {
+  width: 500px;
+  height: 500px;
+}
+.INFO .w .chooseGoods .left .mask {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 250px;
+  height: 250px;
+}
+.INFO .w .chooseGoods .right {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  left: 510px;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+.INFO .w .chooseGoods .right img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1000px;
+  height: 1000px;
+}
+.INFO .w .chooseGoods .info {
+  width: 600px;
+  height: 720px;
+  padding: 10px;
+}
+.INFO .w .chooseGoods .info h3 {
+  font-size: 24px;
+  margin-bottom: 0px;
+  height: 72px;
+}
+.INFO .w .chooseGoods .info .info-title {
+  color: #8c8c8c;
+  margin-top: 1rem;
+  font-size: 16px;
+}
+.INFO .w .chooseGoods .info .price {
+  background: #f8f8f8;
+  margin-top: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+.INFO .w .chooseGoods .info .price .up {
+  border-bottom: 1px solid #eeeeee;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+}
+.INFO .w .chooseGoods .info .price .up i {
+  display: inline-block;
+  min-height: 35px;
+  color: #de2910;
+  font-style: normal;
+  font-size: 30px;
+}
+.INFO .w .chooseGoods .info .price .down {
+  padding: 15px 25px;
+}
+.INFO .w .chooseGoods .info .price .down p img {
+  width: 102px;
+  height: 30px;
+}
+.INFO .w .chooseGoods .info .share {
+  height: 52px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.INFO .w .chooseGoods .info .share .remember {
+  text-align: center;
+  line-height: 30px;
+  display: block;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  width: 118px;
+  height: 30px;
+  font-size: 12px;
+}
+.INFO .w .chooseGoods .info .share p {
+  font-size: 12px;
+  text-align: left;
+  width: 200px;
+  height: 32px;
+  line-height: 32px;
+}
+.INFO .w .chooseGoods .info .share p span {
+  display: inline;
+  width: 32px;
+  font-size: 32px;
+}
+.INFO .w .chooseGoods .info .share p span.icon-weixin {
+  color: #1dc104;
+}
+.INFO .w .chooseGoods .info .share p span.icon-weibo1 {
+  color: #ea5d5c;
+}
+.INFO .w .chooseGoods .info .share p span.icon-qq {
+  color: #68a5e1;
+}
+.INFO .w .chooseGoods .info .share p span.icon-qqkongjian {
+  color: #f5bc32;
+}
+.INFO .w .chooseGoods .info .colorBox {
+  height: 110px;
+}
+.INFO .w .chooseGoods .info .colorBox p {
+  color: #8c8c8c;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.INFO .w .chooseGoods .info .colorBox p span {
+  color: #de2910;
+}
+.INFO .w .chooseGoods .info .colorBox img {
+  width: 72px;
+  height: 72px;
+  border: 2px solid #de2910;
+}
+.INFO .w .chooseGoods .info .sizeBox p {
+  color: #8c8c8c;
+  font-size: 12px;
+}
+.INFO .w .chooseGoods .info .sizeBox p span {
+  display: inline;
+  color: #de2910;
+  border: 0px;
+}
+.INFO .w .chooseGoods .info .sizeBox span {
+  display: block;
+  width: 72px;
+  height: 42px;
+  text-align: center;
+  line-height: 42px;
+  border: 2px solid #de2910;
+  font-size: 12px;
+}
+.INFO .w .chooseGoods .info .count {
+  padding: 10px 0;
+}
+.INFO .w .chooseGoods .info .count p {
+  padding: 10px 0;
+  color: #8c8c8c;
+  font-size: 12px;
+}
+.INFO .w .chooseGoods .info .count div {
+  display: flex;
+}
+.INFO .w .chooseGoods .info .count div a {
+  text-align: center;
+  display: block;
+  width: 50px;
+  height: 42px;
+  line-height: 42px;
+  border: 1px solid #8c8c8c;
+  font-size: 25px;
+}
+.INFO .w .chooseGoods .info .count div span {
+  text-align: center;
+  display: block;
+  width: 50px;
+  height: 42px;
+  line-height: 42px;
+  border-top: 1px solid #8c8c8c;
+  border-bottom: 1px solid #8c8c8c;
+}
+.INFO .w .chooseGoods .info .op {
+  margin-top: 15px;
+}
+.INFO .w .chooseGoods .info .op .buy,
+.INFO .w .chooseGoods .info .op .intoCart {
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  outline: none;
+  margin-right: 30px;
+  font-size: 20px;
+}
+.INFO .w .chooseGoods .info .op .intoCart {
+  border: 0px;
+  background-color: #de2910;
+  color: #fff;
+}
+.INFO .w .chooseGoods .info .op .intoCart:hover {
+  cursor: pointer;
+}
+
+.bboard .w a {
+  display: block;
+  margin: 0 auto;
+  width: 58px;
+  height: 22px;
+  text-align: center;
+  font-size: 12px;
+  border-bottom: 1px solid #000;
+}
+
+.DETAIL .w .allPic {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.like {
+  margin: 50px 0;
+}
+.like .w {
+  border-top: 1px solid #d0d0d0;
+}
+.like .w h2 {
+  margin: 20px auto;
+  text-align: center;
+}
+.like .w ul {
+  display: flex;
+  justify-content: space-between;
+}
+.like .w ul li:hover {
+  box-shadow: 0 0 12px 8px #f3f3f3;
+}
+.like .w ul li {
+  width: 208px;
+  padding: 10px;
+}
+.like .w ul li img {
+  width: 208px;
+}
+.like .w ul li p {
+  font-size: 16px;
+  text-align: center;
+  margin: 10px 0 5px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #000000;
+}
+.like .w ul li span {
+  font-size: 14px;
+}
+.like .w ul li span.cont-money {
+  margin-left: 20px;
+  color: red;
+  font-weight: bold;
+}
+.like .w ul li span.cost-line {
+  color: #c7c7c7;
+  margin-left: 12px;
+  text-decoration: line-through;
+}

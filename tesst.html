@@ -1,0 +1,87 @@
+<!--
+ * @Author: Wenjiahao
+ * @Date: 2022-08-31 20:21:30
+ * @LastEditors: wenjiahao
+ * @LastEditTime: 2022-08-31 20:55:04
+ * @FilePath: \North-face\tesst.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+</head>
+<body>
+    
+
+    <!-- 轮播图 -->
+    <!-- <div class="banner">
+        <div class="w"> -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-wrap">
+                            <img src="./images/sy01.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-wrap">
+                            <img src="../images/sy02.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-wrap">
+                            <img src="../images/sy03.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-wrap">
+                            <img src="../images/sy04.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+        
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+        
+            </div>
+         <!-- </div>
+        </div> -->
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            // direction: 'vertical', // 垂直切换选项
+            loop: true, // 循环模式选项
+            speed: 1500,
+            slidesPerView: 1,
+            spaceBetween: 30,
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        })
+    </script>
+</body>
+</html>
